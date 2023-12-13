@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.search-box input[type="text"] {
+    width: 60%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-box button[type="submit"] {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-box button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.result {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.result h2 {
+    margin-top: 0;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+
+.header {
+    text-align: center;
+    background-color: #ffffff;
+    color: white;
+    padding: 1px 0;
+    margin-bottom: 1px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+        /* or 'center' */
+}
+
+
+.event-type {
+    color: #a9a9a9;
+    /* Lighter gray color */
+    font-size: 0.8em;
+    font-weight: 200;
+    /* Lower value for slimmer font */
+}
+
+
+.left-column {
+    flex: 1;
+    padding: 20px;
+    /* Adjust as necessary */
+    /* Other properties */
+}
+
+.right-column {
+    flex: 20;
+    padding: 20px;
+    /* Adjust as necessary */
+    /* Other properties */
+}
+.spacer {
+    height: 100px;
+    /* Adjust this value to move the checkboxes lower */
+}
+
+.checkboxes {
+    margin-top: 20px;
+    /* adjust this value to your liking */
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    /* adjust this as needed */
+    height: auto;
+    align-self: center;
+}
+/* .ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.textae-editor__dialog.ui-draggable {
+    display: none !important;
+} */
+
+.alpha-slider {
+    margin-top: 20px;
+    /* Adjust this value according to your needs */
+}
+

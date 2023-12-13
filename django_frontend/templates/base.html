@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Biomedical Event Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://textae.pubannotation.org/lib/css/textae.min.css" />
+    <script src="https://textae.pubannotation.org/lib/textae.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/BEHF{% static 'styles/main.css' %}" />
+</head>
+
+<body>
+    <div class="header">
+        <img src="/BEHF{% static 'images/bef.png' %}" alt="Logo" class="logo" />
+    </div>
+
+    <div class="content-wrapper">
+
+        <div class="left-column">
+
+            <!-- Dropdown for event types -->
+            <form method="get">
+                <div class="spacer"></div>
+                <div class="event-type">EVENT TYPE</div>
+                <select name="event_type" class="select">
+                    <option value="cg" {% if event_type == "cg" %}selected{% endif %}>Cancer Genetics</option>
+                    <option value="id" {% if event_type == "id" %}selected{% endif %}>Infectious Diseases</option>
+                </select>
+                    
+
+                <!-- Slider for alpha value -->
+                <div class="alpha-slider" style="margin-top: 20px;">
+                    <label for="alpha">Alpha: </label>
+                    <span id="alphaValue">{{ alpha }}</span>
+                    <input type="range" id="alpha" name="alpha" min="0" max="1" step="0.1" value="{{ alpha }}"
+                        onchange="updateAlphaValue(this.value);">
+                        <p style="font-size: 12px;">1 for full sparse search</p>
+                        <p style="font-size: 12px;">0 for full dense search</p>
+                </div>
+
+
+
+
+
+        </div>
+
+        <div class="right-column">
+            <div class="search-box">
+                <input type="text" name="query" placeholder="Search" required value="{{ query }}">
+                <button type="submit">Search</button>
+            </div>
+            </form>
+            <div class="container">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function updateAlphaValue(value) {
+        document.getElementById('alphaValue').innerText = value;
+    }
+</script>
+</html>
+

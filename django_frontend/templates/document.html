@@ -1,0 +1,20 @@
+{% extends 'base_no_search.html' %}
+
+{% block content %}
+<div class="container">
+    
+    <h2>Original event:</h2>
+    <div class="textae-editor">
+        {{ resultTextAE | safe }}
+    </div>
+    <!-- Rest of the document HTML goes here... -->
+    
+    
+    <!-- Display the doc_id -->
+    <h2>Manuscript:</h2>
+    <h5>PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/{{ doc_id }}/">{{ doc_id }}</a></h5>
+    <div class="textae-editor">
+        {{ textAE | safe }}
+    </div>
+</div>
+{% endblock %}

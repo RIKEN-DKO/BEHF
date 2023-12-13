@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <!-- <h1>Search Results for "{{ query }}"</h1> -->
+    {% for result in results %}
+    <div class="result">
+        <h5>{{ result.rank }}</h5> <!-- Directly display the rank -->
+        <p style="font-size:0.8em;">Type:{{ result.search_type }} | Score: {{ result.total_score }}</p> <!-- Apply CSS styles to make the text smaller -->
+        <div class="textae-editor">
+            {{ result.textAE | safe }}
+        </div>
+        <h5>Documents that contain the same biological event (Click to enlarge):  </h5>
+        <h6>PMID</h6>
+        <div>
+            {% for doc in result.documents %}
+            <div class="doc">
+                <p>
+            <!-- {{ doc.doc_id }} - {{ result.textAE|escapejs|urlencode }} -->
+
+            <a href="/BEHF{% url 'document' doc.doc_id result.textAE|escapejs|urlencode %}">{{ doc.doc_id }}</a>: {{doc.doc_text|slice:":100" }}{% if doc.doc_text|length > 100 %}...{% endif %}
+
+
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+<!-- Pagination -->
+<div class="pagination">
+    <span class="step-links">
+        {% if results.has_previous %}
+        <a href="?query={{ query }}&page={{ results.previous_page_number }}&event_type={{ event_type }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ results.number }} of {{ results.paginator.num_pages }}
+        </span>
+
+        {% if results.has_next %}
+        <a href="?query={{ query }}&page={{ results.next_page_number }}&event_type={{ event_type }}">next</a>
+        {% endif %}
+    </span>
+</div>
+
+
+</div>
+{% endblock %}

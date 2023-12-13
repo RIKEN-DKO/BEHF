@@ -1,0 +1,167 @@
+'graphs': [
+        {'directed': True, 'multigraph': False, 'graph': {'source_doc': '11305186', 'dataset': 'PUBMED', 'root': 'T10'
+            }, 'nodes': [
+                {'type': 'Localization', 'name': 'present\n', 'id': 'T10'
+                },
+                {'type': 'Cancer', 'name': 'melanoma\n', 'id': 'T8'
+                }
+            ], 'links': [
+                {'key': 'Theme', 'event_id': 'E2', 'source': 'T10', 'target': 'T8'
+                }
+            ]
+        },
+        {'directed': True, 'multigraph': False, 'graph': {'source_doc': '10750731', 'dataset': 'PUBMED', 'root': 'T24'
+            }, 'nodes': [
+                {'type': 'Cancer', 'name': 'melanoma\n', 'id': 'T15'
+                },
+                {'type': 'Development', 'name': 'arise\n', 'id': 'T24'
+                }
+            ], 'links': [
+                {'key': 'Theme', 'event_id': 'E5', 'source': 'T24', 'target': 'T15'
+                }
+            ]
+        },
+        {'directed': True, 'multigraph': False, 'graph': {'source_doc': '11220671', 'dataset': 'PUBMED', 'root': 'T55'
+            }, 'nodes': [
+                {'type': 'Cancer', 'name': 'melanoma\n', 'id': 'T37'
+                },
+                {'type': 'Development', 'name': 'occurrence\n', 'id': 'T55'
+                }
+            ], 'links': [
+                {'key': 'Theme', 'event_id': 'E15', 'source': 'T55', 'target': 'T37'
+                }
+            ]
+        },
+        {'directed': True, 'multigraph': False, 'graph': {'source_doc': '11312420', 'dataset': 'PUBMED', 'root': 'T23'
+            }, 'nodes': [
+                {'type': 'Cancer', 'name': 'melanoma\n', 'id': 'T9'
+                },
+                {'type': 'Development', 'name': 'occurrence\n', 'id': 'T23'
+                }
+            ], 'links': [
+                {'key': 'Theme', 'event_id': 'E2', 'source': 'T23', 'target': 'T9'
+                }
+            ]
+        },
+        {'directed': True, 'multigraph': False, 'graph': {'source_doc': '10995892', 'dataset': 'PUBMED', 'root': 'T31'
+            }, 'nodes': [
+                {'type': 'Cancer', 'name': 'melanomas\n', 'id': 'T22'
+                },
+                {'type': 'Mutation', 'name': 'LOH\n', 'id': 'T31'
+                }
+            ], 'links': [
+                {'key': 'AtLoc', 'event_id': 'E4', 'source': 'T31', 'target': 'T22'
+                }
+            ]
+        },
+        {'directed': True, 'multigraph': False, 'graph': {'source_doc': '10877980', 'dataset': 'PUBMED', 'root': 'T31'
+            }, 'nodes': [
+                {'type': 'Cancer', 'name': 'melanomas\n', 'id': 'T14'
+                },
+                {'type': 'Mutation', 'name': 'LOH\n', 'id': 'T31'
+                }
+            ], 'links': [
+                {'key': 'AtLoc', 'event_id': 'E4', 'source': 'T31', 'target': 'T14'
+                }
+            ]
+        },
+        {'directed': True, 'multigraph': False, 'graph': {'source_doc': '10738254', 'dataset': 'PUBMED', 'root': 'T44'
+            }, 'nodes': [
+                {'type': 'Cancer', 'name': 'melanomas\n', 'id': 'T27'
+                },
+                {'type': 'Mutation', 'name': 'LOH\n', 'id': 'T44'
+                }
+            ], 'links': [
+                {'key': 'AtLoc', 'event_id': 'E5', 'source': 'T44', 'target': 'T27'
+                }
+            ]
+        },
+        {'directed': True, 'multigraph': False, 'graph': {'source_doc': '10861466', 'dataset': 'PUBMED', 'root': 'T20'
+            }, 'nodes': [
+                {'type': 'Development', 'name': 'occurrence\n', 'id': 'T20'
+                },
+                {'type': 'Cancer', 'name': 'melanoma\n', 'id': 'T17'
+                }
+            ], 'links': [
+                {'key': 'Theme', 'event_id': 'E3', 'source': 'T20', 'target': 'T17'
+                }
+            ]
+        },
+        {'directed': True, 'multigraph': False, 'graph': {'source_doc': '12461329', 'dataset': 'PUBMED', 'root': 'T60'
+            }, 'nodes': [
+                {'type': 'Cancer', 'name': 'melanoma\n', 'id': 'T6'
+                },
+                {'type': 'Development', 'name': 'occurrence\n', 'id': 'T60'
+                }
+            ], 'links': [
+                {'key': 'Theme', 'event_id': 'E3', 'source': 'T60', 'target': 'T6'
+                }
+            ]
+        },
+        {'directed': True, 'multigraph': False, 'graph': {'source_doc': '12378910', 'dataset': 'PUBMED', 'root': 'T5'
+            }, 'nodes': [
+                {'type': 'Cancer', 'name': 'melanoma\n', 'id': 'T2'
+                },
+                {'type': 'Development', 'name': 'occurrence\n', 'id': 'T5'
+                }
+            ], 'links': [
+                {'key': 'Theme', 'event_id': 'E1', 'source': 'T5', 'target': 'T2'
+                }
+            ]
+        },
+        {'directed': True, 'multigraph': False, 'graph': {'source_doc': '12207681', 'dataset': 'PUBMED', 'root': 'T12'
+            }, 'nodes': [
+                {'type': 'Development', 'name': 'occurrence\n', 'id': 'T12'
+                },
+                {'type': 'Cancer', 'name': 'melanoma\n', 'id': 'T4'
+                }
+            ], 'links': [
+                {'key': 'Theme', 'event_id': 'E2', 'source': 'T12', 'target': 'T4'
+                }
+            ]
+        },
+        {'directed': True, 'multigraph': False, 'graph': {'source_doc': '11792747', 'dataset': 'PUBMED', 'root': 'T50'
+            }, 'nodes': [
+                {'type': 'Development', 'name': 'occurrence\n', 'id': 'T50'
+                },
+                {'type': 'Cancer', 'name': 'melanoma\n', 'id': 'T41'
+                }
+            ], 'links': [
+                {'key': 'Theme', 'event_id': 'E6', 'source': 'T50', 'target': 'T41'
+                }
+            ]
+        },
+        {'directed': True, 'multigraph': False, 'graph': {'source_doc': '11298586', 'dataset': 'PUBMED', 'root': 'T46'
+            }, 'nodes': [
+                {'type': 'Planned_process', 'name': 'established\n', 'id': 'T46'
+                },
+                {'type': 'Cancer', 'name': 'melanoma\n', 'id': 'T33'
+                }
+            ], 'links': [
+                {'key': 'Theme', 'event_id': 'E6', 'source': 'T46', 'target': 'T33'
+                }
+            ]
+        },
+        {'directed': True, 'multigraph': False, 'graph': {'source_doc': '11570584', 'dataset': 'PUBMED', 'root': 'T77'
+            }, 'nodes': [
+                {'type': 'Cancer', 'name': 'melanoma\n', 'id': 'T50'
+                },
+                {'type': 'Negative_regulation', 'name': 'activity\n', 'id': 'T77'
+                }
+            ], 'links': [
+                {'key': 'Theme', 'event_id': 'E18', 'source': 'T77', 'target': 'T50'
+                }
+            ]
+        },
+        {'directed': True, 'multigraph': False, 'graph': {'source_doc': '12115327', 'dataset': 'PUBMED', 'root': 'T22'
+            }, 'nodes': [
+                {'type': 'Death', 'name': 'death\n', 'id': 'T22'
+                },
+                {'type': 'Cancer', 'name': 'melanoma\n', 'id': 'T3'
+                }
+            ], 'links': [
+                {'key': 'Theme', 'event_id': 'E1', 'source': 'T22', 'target': 'T3'
+                }
+            ]
+        }
+    ]

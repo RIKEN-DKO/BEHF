@@ -1,9 +1,13 @@
 # Designing a Semantic-Enhanced Hybrid Search Engine for Biomedical Events
-## New site: [https://metadb.riken.jp/BEHF](https://metadb.riken.jp/BEHF)  
 
+## Introduction
 
+This repository is dedicated to the research and development of the Biomedical Event Hybrid Finder (BEHF), a state-of-the-art semantic search engine. Developed by Julio C Rangel and Norio Kobayashi, BEHF is designed to identify biomedical events within PubMed documents, leveraging advanced technologies like Elasticsearch, SPLADE, and Faiss Approximate Nearest Neighbors (ANN).
+
+## Abstract
 
 The Biomedical Event Hybrid Finder (BEHF) is a semantic search engine tailored for the discovery of biomedical events (BE) in PubMed documents. It combines Elasticsearch's exact match search capabilities with expanded keywords provided by SPLADE, and leverages Faiss ANN for semantic similarity search. BEHF utilizes a unique dataset of network graphs, derived from the PubMed Baseline Database (BD) repository, and offers a flexible scoring mechanism to balance between exact match and semantic similarity searches.
+
 
 
 

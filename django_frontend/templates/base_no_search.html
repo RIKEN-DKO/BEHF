@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Biomedical Event Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://textae.pubannotation.org/lib/css/textae.min.css" />
+    <script src="https://textae.pubannotation.org/lib/textae.min.js"></script>
+    {% load static %} <!-- Add this line -->
+    <link rel="stylesheet" type="text/css" href="/BEHF{% static 'main.css' %}">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+        </div>
+    </div>
+    <div class="container content-wrapper">
+        <div class="right-column">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+
+</html>
